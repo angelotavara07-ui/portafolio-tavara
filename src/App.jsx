@@ -1,13 +1,9 @@
-import Navbar from './components/Navbar/Navbar';
-import './App.css';
-import './index.css';
-function App() {
-return (
-<>
-<Navbar />
-
-
-</>
-)
+const Navbar = () => {
+  return (
+    <>
+      {/* contenido */}
+    </>
+  )
 }
-export default App;
+
+export default Navbar;
