@@ -8,7 +8,7 @@ const proyectosData = [
     titulo: "Sistema de Citas Médicas",
     descripcion: "Dashboard y sistema web para gestión de citas médicas desarrollado con Laravel.",
     tecnologias: ["Laravel", "PHP", "MySQL", "JavaScript", "Bootstrap"],
-    linkDemo: "#",
+    linkDemo: "knightxhornet.com",
     linkCodigo: "https://github.com/alonsoSaavedra-03/app-gestion-citas"
     },
     {

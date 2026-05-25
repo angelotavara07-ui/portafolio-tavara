@@ -16,7 +16,7 @@ Desarrollador Web | Data Analyst | Power BI Developer
 
 <div className="footer-social">
 
-<a href="https://github.com" target="_blank" rel="noopener noreferrer">
+<a href="https://github.com/angelotavara07-ui" target="_blank" rel="noopener noreferrer">
 GitHub
 </a>
 
@@ -24,7 +24,7 @@ GitHub
 LinkedIn
 </a>
 
-<a href="mailto:correo@gmail.com">
+<a href="mailto:angelotavara07@gmail.com">
 Email
 </a>
 
