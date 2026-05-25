@@ -1,9 +1,29 @@
-const Navbar = () => {
-  return (
-    <>
-      {/* contenido */}
-    </>
-  )
-}
+import Navbar from './components/Navbar/Navbar';
+import Banner from './components/Banner/Banner';
+import Perfil from './components/Perfil/Perfil';
+import Habilidades from './components/Habilidades/Habilidades';
+import Proyectos from './components/Proyectos/Proyectos';
+import Contacto from './components/Contactos/Contacto';
+import Servicios from './components/Servicios/Servicios';
+import Certificados from './components/Certificados/Certificados';
+import Footer from './components/Footer/Footer';
+import './App.css';
+import './index.css';
 
-export default Navbar;
+
+function App() {
+return (
+<>
+<Navbar />
+<Banner />
+<Perfil />
+<Habilidades />
+<Proyectos />
+<Contacto />
+<Servicios />
+<Certificados />
+<Footer />
+</>
+)
+}
+export default App;
