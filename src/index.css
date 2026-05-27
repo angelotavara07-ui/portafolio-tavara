@@ -1,53 +1,168 @@
-:root{
+:root {
 
-  /* COLORES PRINCIPALES */
-  
-  --color-bg:#0f172a;
-  --color-bg-secondary:#1e293b;
-  
-  --color-primary:#38bdf8;
-  --color-primary-hover:#0ea5e9;
-  
-  --color-white:#f8fafc;
-  --color-text:#cbd5e1;
-  
-  --color-border:rgba(255,255,255,0.08);
-  
-  --shadow-primary:0 10px 30px rgba(0,0,0,0.25);
-  
-  --transition:0.3s ease;
-  
-  }
-  
-  /* RESET */
-  
-  *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
-  }
-  
-  html{
-  scroll-behavior:smooth;
-  }
-  
-  body{
-  background:var(--color-bg);
-  color:var(--color-white);
-  overflow-x:hidden;
-  }
-  
-  a{
-  text-decoration:none;
-  color:inherit;
-  }
-  
-  img{
-  max-width:100%;
-  display:block;
-  }
-  
-  section{
-  width:100%;
-  }
+  /* =========================================
+FONDOS PRINCIPALES
+========================================= */
+
+  --color-bg: #121f3c;
+  --color-bg-secondary: #102654;
+  --color-card: #172033;
+  --color-card-alt: #1b2640;
+  --color-footer-bg: #05070f;
+
+  /* =========================================
+COLORES PRINCIPALES
+========================================= */
+
+  --color-primary: #5eead4;
+  --color-primary-hover: #2dd4bf;
+
+  --color-secondary: #818cf8;
+  --color-secondary-soft: rgba(129, 140, 248, 0.12);
+
+  --color-accent: #f472b6;
+  --color-accent-soft: rgba(244, 114, 182, 0.10);
+
+  /* =========================================
+TEXTOS
+========================================= */
+
+  --color-white: #f8fafc;
+  --color-text: #cbd5e1;
+  --color-text-soft: #94a3b8;
+  --color-text-muted: #64748b;
+
+  /* =========================================
+SUPERFICIES
+========================================= */
+
+  --color-surface: rgba(255, 255, 255, 0.04);
+  --color-surface-light: rgba(255, 255, 255, 0.07);
+  --color-surface-hover: rgba(255, 255, 255, 0.10);
+
+  --color-overlay-soft: rgba(255, 255, 255, 0.025);
+  --color-overlay-strong: rgba(255, 255, 255, 0.04);
+
+  /* =========================================
+BORDES
+========================================= */
+
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.16);
+  --color-border-hover: rgba(94, 234, 212, 0.35);
+
+  /* =========================================
+COLORES SUAVES
+========================================= */
+
+  --color-primary-soft: rgba(94, 234, 212, 0.10);
+  --color-primary-soft-hover: rgba(94, 234, 212, 0.18);
+
+  /* =========================================
+NAVBAR
+========================================= */
+
+  --color-navbar: rgba(10, 15, 28, 0.75);
+
+  /* =========================================
+GRADIENTES
+========================================= */
+
+  --gradient-primary:
+    linear-gradient(135deg,
+      #5eead4 0%,
+      #818cf8 50%,
+      #38bdf8 100%);
+
+  --gradient-card:
+    linear-gradient(180deg,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.01) 100%);
+
+  --gradient-hero:
+    radial-gradient(circle at top,
+      rgba(129, 140, 248, 0.15) 0%,
+      rgba(94, 234, 212, 0.08) 25%,
+      transparent 60%);
+
+  /* =========================================
+SOMBRAS
+========================================= */
+
+  --shadow-primary:
+    0 10px 30px rgba(0, 0, 0, 0.35);
+
+  --shadow-hover:
+    0 15px 40px rgba(0, 0, 0, 0.45);
+
+  --shadow-navbar:
+    0 4px 12px rgba(0, 0, 0, 0.18);
+
+  --shadow-dropdown:
+    0 10px 20px rgba(0, 0, 0, 0.30);
+
+  --shadow-glow:
+    0 0 25px rgba(94, 234, 212, 0.15);
+
+  /* =========================================
+TRANSICIONES
+========================================= */
+
+  --transition: 0.3s ease;
+
+}
+
+/* =========================================
+RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    var(--gradient-hero),
+    var(--color-bg);
+  color: var(--color-white);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  width: 100%;
+}
+
+/* =========================================
+ELEMENTOS GENERALES
+========================================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  width: 100%;
+}

@@ -2,148 +2,156 @@
 CONTENEDOR PRINCIPAL
 ========================================= */
 
-.certificados-section{
-    padding:6rem 5%;
-    background:var(--color-bg);
-    display:flex;
-    justify-content:center;
+.certificados-section {
+    padding: 6rem 5%;
+    background: var(--color-bg);
+    display: flex;
+    justify-content: center;
+}
+
+.certificados-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* =========================================
+GRID
+========================================= */
+
+.certificados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2.8rem;
+    margin-top: 3rem;
+}
+
+/* =========================================
+TARJETA
+========================================= */
+
+.certificado-card {
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 22px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+    box-shadow: var(--shadow-primary);
+    padding: 1.4rem;
+    position: relative;
+}
+
+.certificado-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-primary);
+}
+
+/* =========================================
+IMAGEN
+========================================= */
+
+.certificado-imagen {
+    width: 100%;
+    padding: 0.4rem;
+    margin-bottom: 1.4rem;
+}
+
+.certificado-imagen img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: var(--color-surface-light);
+    border: 1px solid var(--color-border);
+    border-radius: 18px;
+    padding: 1.5rem;
+    transition: var(--transition);
+}
+
+.certificado-card:hover .certificado-imagen img {
+    transform: scale(1.02);
+}
+
+/* =========================================
+CONTENIDO
+========================================= */
+
+.certificado-contenido {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0.6rem 0.9rem 1rem;
+}
+
+.certificado-titulo {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-white);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.certificado-inst {
+    color: var(--color-text);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+/* =========================================
+BOTÓN
+========================================= */
+
+.certificado-links {
+    margin-top: auto;
+}
+
+.btn-certificado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    background: var(--color-primary-soft);
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn-certificado:hover {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-primary);
+}
+
+/* =========================================
+RESPONSIVE
+========================================= */
+
+@media (max-width:768px) {
+
+    .certificados-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
-    
-    .certificados-container{
-    max-width:1200px;
-    width:100%;
+
+    .certificado-card {
+        padding: 1rem;
     }
-    
-    .text-center{
-    text-align:center;
+
+    .certificado-imagen img {
+        height: 200px;
+        padding: 1rem;
     }
-    
-    /* =========================================
-    GRID
-    ========================================= */
-    
-    .certificados-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
-    gap:2.5rem;
-    margin-top:3rem;
-    }
-    
-    /* =========================================
-    TARJETA
-    ========================================= */
-    
-    .certificado-card{
-    background:var(--color-bg-secondary);
-    border:1px solid var(--color-border);
-    border-radius:20px;
-    overflow:hidden;
-    display:flex;
-    flex-direction:column;
-    transition:var(--transition);
-    box-shadow:0 6px 20px rgba(0,0,0,0.2);
-    padding:1.2rem;
-    }
-    
-    .certificado-card:hover{
-    transform:translateY(-6px);
-    border-color:var(--color-primary);
-    box-shadow:var(--shadow-primary);
-    }
-    
-    /* =========================================
-    IMAGEN
-    ========================================= */
-    
-    .certificado-imagen{
-    width:100%;
-    padding:0.5rem;
-    margin-bottom:1rem;
-    }
-    
-    .certificado-imagen img{
-    width:100%;
-    height:220px;
-    object-fit:contain;
-    background:#ffffff;
-    border-radius:14px;
-    padding:1rem;
-    }
-    
-    /* =========================================
-    CONTENIDO
-    ========================================= */
-    
-    .certificado-contenido{
-    display:flex;
-    flex-direction:column;
-    flex-grow:1;
-    padding:0.5rem 0.8rem 1rem;
-    }
-    
-    .certificado-titulo{
-    font-size:1.3rem;
-    font-weight:700;
-    color:var(--color-white);
-    line-height:1.5;
-    margin-bottom:1rem;
-    }
-    
-    .certificado-inst{
-    color:var(--color-text);
-    font-size:1rem;
-    margin-bottom:2rem;
-    line-height:1.6;
-    }
-    
-    /* =========================================
-    BOTÓN
-    ========================================= */
-    
-    .certificado-links{
-    margin-top:auto;
-    }
-    
-    .btn-certificado{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:0.7rem;
-    width:100%;
-    padding:1rem 1.5rem;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:600;
-    font-size:1rem;
-    background:rgba(0,212,255,0.08);
-    border:1px solid var(--color-primary);
-    color:var(--color-primary);
-    transition:var(--transition);
-    }
-    
-    .btn-certificado:hover{
-    background:var(--color-primary);
-    color:#081018;
-    transform:translateY(-2px);
-    }
-    
-    /* =========================================
-    RESPONSIVE
-    ========================================= */
-    
-    @media (max-width:768px){
-    
-    .certificados-grid{
-    grid-template-columns:1fr;
-    gap:2rem;
-    }
-    
-    .certificado-card{
-    padding:1rem;
-    }
-    
-    .certificado-imagen img{
-    height:200px;
-    }
-    
-    }
+
+}

@@ -1,50 +1,66 @@
-.footer{
-    padding:3rem 5%;
-    background:var(--color-bg);
-    color:var(--color-white);
-    text-align:center;
-    border-top:1px solid var(--color-border);
-    }
-    
-    .footer-container{
-    max-width:1200px;
-    margin:auto;
-    }
-    
-    .footer-logo{
-    font-size:2rem;
-    font-weight:700;
-    color:var(--color-primary);
-    margin-bottom:1rem;
-    }
-    
-    .footer-text{
-    color:var(--color-text);
-    margin-bottom:2rem;
-    line-height:1.6;
-    }
-    
-    .footer-social{
-    display:flex;
-    justify-content:center;
-    gap:1.5rem;
-    margin-bottom:2rem;
-    flex-wrap:wrap;
-    }
-    
-    .footer-social a{
-    color:var(--color-white);
-    text-decoration:none;
-    transition:var(--transition);
-    font-weight:500;
-    }
-    
-    .footer-social a:hover{
-    color:var(--color-primary);
-    transform:translateY(-2px);
-    }
-    
-    .footer-copy{
-    color:#6b7280;
-    font-size:0.9rem;
-    }
+/* =========================================
+FOOTER
+========================================= */
+
+.footer {
+    padding: 3.5rem 5%;
+    background: var(--color-footer-bg);
+    color: var(--color-white);
+    text-align: center;
+    border-top: 1px solid var(--color-border);
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.footer-text {
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-social a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 500;
+    padding: 0.7rem 1.1rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.footer-social a:hover {
+    color: var(--color-primary);
+    background: var(--color-surface);
+    border-color: var(--color-border-strong);
+    transform: translateY(-2px);
+}
+
+.footer-copy {
+    color: var(--color-text-soft);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--color-border);
+    padding-top: 1.5rem;
+}
