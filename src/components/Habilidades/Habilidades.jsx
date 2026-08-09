@@ -54,14 +54,6 @@ const Habilidades = () => {
         },
 
         {
-            id: 7,
-            titulo: "Python",
-            descripcion: "Automatización básica, análisis de datos y lógica de programación.",
-            nivel: "Básico - Intermedio",
-
-        },
-
-        {
             id: 8,
             titulo: "Git & GitHub",
             descripcion: "Control de versiones, ramas, commits y repositorios remotos.",

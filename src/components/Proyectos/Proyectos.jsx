@@ -2,6 +2,7 @@ import preview from '../../assets/preview.png';
 import preview2 from '../../assets/preview2.png';
 import preview3 from '../../assets/preview3.png';
 import preview4 from '../../assets/preview4.png';
+import preview5 from '../../assets/preview5.png';
 import './Proyectos.css';
 
 const Proyectos = () => {
@@ -42,6 +43,15 @@ const Proyectos = () => {
             tecnologias: ["PHP", "PHPMailer", "HTML", "CSS", "JavaScript"],
             linkDemo: "https://tavara-proyecto-php.rf.gd",
         },
+        {
+            id: 5,
+            imagen: preview5,
+            titulo: "Tienda en Línea — VendeFácil",
+            descripcion: "Tienda web desarrollada con React y Vite. Incluye catálogo de 30 productos en 3 categorías, sistema de pedidos por WhatsApp, formulario de contacto con EmailJS y diseño responsive para desktop y móvil.",
+            tecnologias: ["React", "Vite", "CSS3", "EmailJS", "SweetAlert2", "React Router DOM"],
+            linkDemo: "https://vendefacil-blush.vercel.app/",
+            linkCodigo: "https://github.com/angelotavara07-ui/vendefacil"
+        },
     ];
     return (
         <section id="proyectos" className="proyectos-section">
@@ -51,15 +61,12 @@ const Proyectos = () => {
                 <div className="proyectos-grid">
                     {proyectosData.map((proyecto) => (
                         <article key={proyecto.id} className="proyecto-card">
-                            {/* 1. Imagen del Proyecto */}
                             <div className="proyecto-imagen">
                                 <img src={proyecto.imagen} alt={`Captura de ${proyecto.titulo}`} />
                             </div>
-                            {/* 2. Contenido de la Tarjeta */}
                             <div className="proyecto-contenido">
                                 <h3 className="proyecto-titulo">{proyecto.titulo}</h3>
                                 <p className="proyecto-desc">{proyecto.descripcion}</p>
-                                {/* 3. Etiquetas de Tecnologías (Mapeo Anidado) */}
                                 <div className="proyecto-tags">
                                     {proyecto.tecnologias.map((tech, index) => (
                                         <span key={index} className="tech-tag">
@@ -67,12 +74,10 @@ const Proyectos = () => {
                                         </span>
                                     ))}
                                 </div>
-                                {/* 4. Botones de Acción */}
                                 <div className="proyecto-links">
                                     <a href={proyecto.linkDemo} target="_blank"
                                         rel="noopener noreferrer" className="btn-proyecto btn-demo">
 
-                                        {/* Ícono de Enlace Externo */}
                                         <svg width="18" height="18" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                                             strokeLinejoin="round">
@@ -93,7 +98,6 @@ const Proyectos = () => {
                                             className="btn-proyecto btn-codigo"
                                         >
 
-                                            {/* Ícono de GitHub */}
                                             <svg
                                                 width="18"
                                                 height="18"
